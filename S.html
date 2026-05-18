@@ -1,0 +1,334 @@
+<!DOCTYPE html><html style='font-size:17px'><head>  <meta charset=UTF-8>  <meta name='viewport' content='width=100%, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no'>  <title>S</title>  
+<link rel="stylesheet" href="/var/mobile/Containers/Data/Application/75D02AF7-0713-45CC-9E5D-1469C1D7ECB2/Library/Application Support/MarkDownResources/Styles/GitHub.css"/>
+<link rel="stylesheet" href="/var/mobile/Containers/Data/Application/75D02AF7-0713-45CC-9E5D-1469C1D7ECB2/Library/Application Support/MarkDownResources/Highlight/highlight-style/tomorrow.css"/>  
+<script src="/var/mobile/Containers/Data/Application/75D02AF7-0713-45CC-9E5D-1469C1D7ECB2/Library/Application Support/MarkDownResources/Highlight/highlightjs/highlight.min.js"></script>
+<script src="/var/mobile/Containers/Data/Application/75D02AF7-0713-45CC-9E5D-1469C1D7ECB2/Library/Application Support/MarkDownResources/Highlight/highlightjs/swift.min.js"></script>
+<script src="/var/mobile/Containers/Data/Application/75D02AF7-0713-45CC-9E5D-1469C1D7ECB2/Library/Application Support/MarkDownResources/MathJax/tex-mml-chtml.js"></script>  <script>hljs.initHighlightingOnLoad();</script>  <script type='text/x-mathjax-config'>MathJax.Hub.Config({'showProcessingMessages': false, 'messageStyle': 'none'});</script></head><body>  <p>&lt;!DOCTYPE html&gt;<br>
+<html lang="ar" dir="rtl"><br>
+<head><br>
+    <meta charset="UTF-8"><br>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><br>
+    <title>الذكاء الاصطناعي والأنظمة الإلكترونية - عرض تفاعلي</title></p>
+
+<pre><code>&lt;link href=&quot;https://fonts.googleapis.com/css2?family=Tajawal:wght@300;500;800&amp;display=swap&quot; rel=&quot;stylesheet&quot;&gt;
+
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.css&quot;&gt;
+&lt;link rel=&quot;stylesheet&quot; href=&quot;https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/theme/black.min.css&quot;&gt;
+
+&lt;style&gt;
+    :root {
+        --accent-color: #00f2ff;
+        --glass-bg: rgba(10, 15, 25, 0.7);
+    }
+
+    body {
+        font-family: &#39;Tajawal&#39;, sans-serif;
+        background: #020205;
+        margin: 0;
+        overflow: hidden;
+    }
+
+    #bg-canvas {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .reveal-viewport {
+        z-index: 2 !important;
+        background: transparent !important;
+    }
+
+    .slides section {
+        background: var(--glass-bg);
+        backdrop-filter: blur(15px);
+        -webkit-backdrop-filter: blur(15px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 25px;
+        padding: 40px !important;
+        color: #fff;
+        text-align: right;
+        box-shadow: 0 20px 50px rgba(0,0,0,0.5);
+    }
+
+    h1, h2, h3 {
+        font-family: &#39;Tajawal&#39;, sans-serif;
+        font-weight: 800 !important;
+        color: var(--accent-color) !important;
+        text-shadow: 0 0 15px rgba(0, 242, 255, 0.4);
+        margin-bottom: 30px !important;
+    }
+
+    p, li {
+        font-size: 0.9em !important;
+        line-height: 1.6 !important;
+        font-weight: 300;
+    }
+
+    .highlight-box {
+        background: rgba(0, 242, 255, 0.1);
+        border-right: 5px solid var(--accent-color);
+        padding: 15px;
+        margin: 15px 0;
+        border-radius: 5px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+        margin-top: 20px;
+    }
+
+    .grid-item {
+        background: rgba(255, 255, 255, 0.05);
+        padding: 15px;
+        border-radius: 12px;
+        text-align: center;
+    }
+
+    .badge {
+        background: var(--accent-color);
+        color: #000;
+        padding: 5px 15px;
+        border-radius: 50px;
+        font-size: 0.5em;
+        font-weight: 800;
+        vertical-align: middle;
+    }
+&lt;/style&gt;
+</code></pre>
+
+<p></head><br>
+<body></p>
+
+<pre><code>&lt;canvas id=&quot;bg-canvas&quot;&gt;&lt;/canvas&gt;
+
+&lt;div class=&quot;reveal&quot;&gt;
+    &lt;div class=&quot;slides&quot;&gt;
+
+        &lt;section&gt;
+            &lt;span class=&quot;badge&quot;&gt;دليل البرنامج التدريبي&lt;/span&gt;
+            &lt;h1&gt;الذكاء الاصطناعي والأنظمة الإلكترونية&lt;/h1&gt;
+            &lt;div class=&quot;highlight-box&quot;&gt;
+                &lt;p&gt;تمكين المشاركين من فهم التقنيات الحديثة وتطبيقاتها العملية في بيئات العمل الحكومية والأمنية.&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;p style=&quot;font-size: 0.7em !important;&quot;&gt;إعداد المدرب: &lt;strong&gt;سيف ناصر الهطالي&lt;/strong&gt;&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h3&gt;الأهداف التفصيلية&lt;/h3&gt;
+            &lt;div class=&quot;grid-container&quot;&gt;
+                &lt;div class=&quot;grid-item fragment fade-up&quot;&gt;تعريف مفهوم الذكاء الاصطناعي&lt;/div&gt;
+                &lt;div class=&quot;grid-item fragment fade-up&quot;&gt;فهم آلية عمل الأنظمة الإلكترونية&lt;/div&gt;
+                &lt;div class=&quot;grid-item fragment fade-up&quot;&gt;تحليل البيانات واتخاذ القرار&lt;/div&gt;
+                &lt;div class=&quot;grid-item fragment fade-up&quot;&gt;تطبيقات الأتمتة والتحول الرقمي&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p class=&quot;fragment&quot; style=&quot;margin-top: 20px; color: var(--accent-color);&quot;&gt;والعديد من المهارات التقنية المتقدمة...&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h3&gt;الجدول الزمني (5 أيام)&lt;/h3&gt;
+            &lt;table style=&quot;width: 100%; font-size: 0.6em;&quot;&gt;
+                &lt;thead&gt;
+                    &lt;tr style=&quot;color: var(--accent-color);&quot;&gt;
+                        &lt;th&gt;اليوم&lt;/th&gt;
+                        &lt;th&gt;الموضوع&lt;/th&gt;
+                        &lt;th&gt;الزمن&lt;/th&gt;
+                    &lt;/tr&gt;
+                &lt;/thead&gt;
+                &lt;tbody&gt;
+                    &lt;tr class=&quot;fragment&quot;&gt;&lt;td&gt;الأول&lt;/td&gt;&lt;td&gt;مقدمة في الذكاء الاصطناعي&lt;/td&gt;&lt;td&gt;5 ساعات&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr class=&quot;fragment&quot;&gt;&lt;td&gt;الثاني&lt;/td&gt;&lt;td&gt;الأنظمة الإلكترونية والتحول الرقمي&lt;/td&gt;&lt;td&gt;5 ساعات&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr class=&quot;fragment&quot;&gt;&lt;td&gt;الثالث&lt;/td&gt;&lt;td&gt;تحليل البيانات والأنظمة الذكية&lt;/td&gt;&lt;td&gt;5 ساعات&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr class=&quot;fragment&quot;&gt;&lt;td&gt;الرابع&lt;/td&gt;&lt;td&gt;الأمن السيبراني والذكاء الاصطناعي&lt;/td&gt;&lt;td&gt;5 ساعات&lt;/td&gt;&lt;/tr&gt;
+                    &lt;tr class=&quot;fragment&quot;&gt;&lt;td&gt;الخامس&lt;/td&gt;&lt;td&gt;التطبيقات العملية والمشاريع&lt;/td&gt;&lt;td&gt;5 ساعات&lt;/td&gt;&lt;/tr&gt;
+                &lt;/tbody&gt;
+            &lt;/table&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;span class=&quot;badge&quot;&gt;الوحدة التدريبية الأولى&lt;/span&gt;
+            &lt;h2&gt;ما هو الذكاء الاصطناعي؟&lt;/h2&gt;
+            &lt;div class=&quot;fragment fade-right highlight-box&quot;&gt;
+                &lt;p&gt;فرع من علوم الحاسب يهدف لتصميم أنظمة تحاكي القدرات الذهنية البشرية:&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;ul&gt;
+                &lt;li class=&quot;fragment&quot;&gt;التفكير والتعلم&lt;/li&gt;
+                &lt;li class=&quot;fragment&quot;&gt;التحليل وحل المشكلات&lt;/li&gt;
+                &lt;li class=&quot;fragment&quot;&gt;اتخاذ القرار المستند للبيانات&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h3&gt;مراحل وتطور التقنية&lt;/h3&gt;
+            &lt;div class=&quot;grid-container&quot;&gt;
+                &lt;div class=&quot;grid-item fragment zoom-in&quot;&gt;
+                    &lt;h4&gt;الضيق (ANI)&lt;/h4&gt;
+                    &lt;p&gt;مهام محددة كبصمة الوجه&lt;/p&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-item fragment zoom-in&quot;&gt;
+                    &lt;h4&gt;العام (AGI)&lt;/h4&gt;
+                    &lt;p&gt;مشابه لقدرات البشر&lt;/p&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p class=&quot;fragment fade-up&quot; style=&quot;font-size: 0.6em !important; text-align: center; margin-top: 20px;&quot;&gt;
+                المسار: أنظمة خبيرة ⬅ تعلم آلة ⬅ تعلم عميق ⬅ ذكاء توليدي
+            &lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h3&gt;تطبيقات عملية&lt;/h3&gt;
+            &lt;div class=&quot;grid-container&quot;&gt;
+                &lt;div class=&quot;grid-item fragment&quot; style=&quot;border: 1px solid var(--accent-color);&quot;&gt;
+                    &lt;strong&gt;التطبيقات الأمنية&lt;/strong&gt;
+                    &lt;ul style=&quot;font-size: 0.8em !important;&quot;&gt;
+                        &lt;li&gt;كشف التهديدات&lt;/li&gt;
+                        &lt;li&gt;تحليل الفيديوهات&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+                &lt;div class=&quot;grid-item fragment&quot; style=&quot;border: 1px solid var(--accent-color);&quot;&gt;
+                    &lt;strong&gt;الخدمات الحكومية&lt;/strong&gt;
+                    &lt;ul style=&quot;font-size: 0.8em !important;&quot;&gt;
+                        &lt;li&gt;المساعدات الرقمية&lt;/li&gt;
+                        &lt;li&gt;أتمتة العمليات (RPA)&lt;/li&gt;
+                    &lt;/ul&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h3&gt;الأمن السيبراني والذكاء الاصطناعي&lt;/h3&gt;
+            &lt;div class=&quot;highlight-box fragment&quot;&gt;
+                &lt;p&gt;الذكاء الاصطناعي كـ &quot;درع رقمي&quot;:&lt;/p&gt;
+            &lt;/div&gt;
+            &lt;ul&gt;
+                &lt;li class=&quot;fragment&quot;&gt;كشف الهجمات الاستباقي&lt;/li&gt;
+                &lt;li class=&quot;fragment&quot;&gt;تحليل السلوك المشبوه للشبكات&lt;/li&gt;
+                &lt;li class=&quot;fragment&quot;&gt;التصدي لبرامج الفدية والتصيد&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/section&gt;
+
+        &lt;section&gt;
+            &lt;h3&gt;أدوات الذكاء الاصطناعي الحديثة&lt;/h3&gt;
+            &lt;div class=&quot;grid-container&quot; style=&quot;grid-template-columns: repeat(3, 1fr);&quot;&gt;
+                &lt;div class=&quot;grid-item fragment&quot;&gt;ChatGPT&lt;/div&gt;
+                &lt;div class=&quot;grid-item fragment&quot;&gt;Gemini&lt;/div&gt;
+                &lt;div class=&quot;grid-item fragment&quot;&gt;Copilot&lt;/div&gt;
+                &lt;div class=&quot;grid-item fragment&quot;&gt;Midjourney&lt;/div&gt;
+                &lt;div class=&quot;grid-item fragment&quot;&gt;Claude&lt;/div&gt;
+                &lt;div class=&quot;grid-item fragment&quot;&gt;Python&lt;/div&gt;
+            &lt;/div&gt;
+            &lt;p class=&quot;fragment&quot; style=&quot;text-align: center; margin-top: 30px;&quot;&gt;&quot;الاستثمار في الكوادر الوطنية هو مفتاح التحول الرقمي&quot;&lt;/p&gt;
+        &lt;/section&gt;
+
+        &lt;section data-background-color=&quot;rgba(0, 242, 255, 0.05)&quot;&gt;
+            &lt;h1&gt;شكراً لكم&lt;/h1&gt;
+            &lt;p&gt;نحو مستقبل رقمي أمن وذكي&lt;/p&gt;
+            &lt;p style=&quot;color: var(--accent-color);&quot;&gt;أكاديمية سيف بن زايد للعلوم الشرطية والأمنية&lt;/p&gt;
+        &lt;/section&gt;
+
+    &lt;/div&gt;
+&lt;/div&gt;
+
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.5.0/reveal.min.js&quot;&gt;&lt;/script&gt;
+
+&lt;script&gt;
+    // --- إعداد THREE.JS (الخلفية ثلاثية الأبعاد) ---
+    const canvas = document.getElementById(&#39;bg-canvas&#39;);
+    const scene = new THREE.Scene();
+    const camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    const renderer = new THREE.WebGLRenderer({ canvas: canvas, antialias: true, alpha: true });
+    renderer.setSize(window.innerWidth, window.innerHeight);
+
+    // إنشاء شبكة جسيمات (Neural Grid)
+    const geometry = new THREE.TorusKnotGeometry(10, 3, 100, 16);
+    const particlesGeometry = new THREE.BufferGeometry();
+    const particlesCount = 4000;
+    const posArray = new Float32Array(particlesCount * 3);
+
+    for(let i=0; i &lt; particlesCount * 3; i++) {
+        posArray[i] = (Math.random() - 0.5) * 60;
+    }
+    particlesGeometry.setAttribute(&#39;position&#39;, new THREE.BufferAttribute(posArray, 3));
+
+    const material = new THREE.PointsMaterial({
+        size: 0.05,
+        color: 0x00f2ff,
+        transparent: true,
+        opacity: 0.5
+    });
+
+    const particlesMesh = new THREE.Points(particlesGeometry, material);
+    scene.add(particlesMesh);
+
+    // إضافة شكل هندسي مركزي (Torus Knot) يعبر عن الترابط
+    const torusGeo = new THREE.TorusKnotGeometry(4, 1, 100, 16);
+    const torusMat = new THREE.MeshBasicMaterial({ color: 0x00f2ff, wireframe: true, transparent: true, opacity: 0.1 });
+    const torus = new THREE.Mesh(torusGeo, torusMat);
+    scene.add(torus);
+
+    camera.position.z = 25;
+
+    // تفاعل الماوس
+    let mouseX = 0;
+    let mouseY = 0;
+    document.addEventListener(&#39;mousemove&#39;, (e) =&gt; {
+        mouseX = (e.clientX / window.innerWidth) - 0.5;
+        mouseY = (e.clientY / window.innerHeight) - 0.5;
+    });
+
+    // التحريك (Animation)
+    function animate() {
+        requestAnimationFrame(animate);
+
+        particlesMesh.rotation.y += 0.001;
+        torus.rotation.x += 0.002;
+        torus.rotation.y += 0.001;
+
+        // ميلان الكاميرا مع الماوس
+        camera.position.x += (mouseX * 5 - camera.position.x) * 0.05;
+        camera.position.y += (-mouseY * 5 - camera.position.y) * 0.05;
+        camera.lookAt(scene.position);
+
+        renderer.render(scene, camera);
+    }
+    animate();
+
+    // --- إعداد REVEAL.JS ---
+    Reveal.initialize({
+        rtl: true,
+        hash: true,
+        transition: &#39;fade&#39;,
+        backgroundTransition: &#39;slide&#39;,
+        center: true,
+        mouseWheel: true
+    });
+
+    // ربط تغيير السلايد بتغيير الإضاءة وزوايا الكاميرا
+    Reveal.on(&#39;slidechanged&#39;, event =&gt; {
+        // تحريك الكاميرا عند كل سلايد لإعطاء عمق
+        camera.position.z = 15 + Math.random() * 15;
+
+        // تغيير لون الجسيمات بشكل عشوائي بين درجات الأزرق والسيان
+        const colors = [0x00f2ff, 0x0077ff, 0x00ffff];
+        material.color.setHex(colors[Math.floor(Math.random() * colors.length)]);
+    });
+
+    // ضبط الحجم عند تغيير حجم النافذة
+    window.addEventListener(&#39;resize&#39;, () =&gt; {
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setSize(window.innerWidth, window.innerHeight);
+    });
+&lt;/script&gt;
+</code></pre>
+
+<p></body><br>
+</html><br>
+<code>Code</code></p>
+<script>window.webkit.messageHandlers.TextLoaded.postMessage('TextLoaded')</script></body></html>
